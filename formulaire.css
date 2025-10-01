@@ -1,0 +1,84 @@
+/* ===============================
+   STYLES FORMULAIRE PRODUIT
+   =============================== */
+
+#add-product-form {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+#add-product-form h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #0b5cff;
+}
+
+#add-product-form .form-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+#add-product-form .form-control {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  padding: 8px 10px;
+  transition: border-color 0.2s;
+}
+
+#add-product-form .form-control:focus {
+  border-color: #0b5cff;
+  box-shadow: 0 0 5px rgba(11, 92, 255, 0.3);
+}
+
+#add-product-form button {
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#add-product-form #submit-product {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+#add-product-form #submit-product:hover {
+  background-color: #218838;
+}
+
+#add-product-form #reset-product {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+#add-product-form #reset-product:hover {
+  background-color: #5a6268;
+}
+
+#add-product-form .form-text {
+  font-size: 12px;
+}
+
+#add-product-msg {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Responsive : formulaire en colonne sur mobile */
+@media (max-width: 768px) {
+  #add-product-form .row {
+    flex-direction: column;
+  }
+  #add-product-form .col-md-3,
+  #add-product-form .col-md-4,
+  #add-product-form .col-md-2 {
+    width: 100%;
+  }
+}

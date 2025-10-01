@@ -1,8 +1,8 @@
-
-
 /* Reset / global */
-* { box-sizing: border-box; }
-body{
+* {
+  box-sizing: border-box;
+}
+body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -10,27 +10,24 @@ body{
   color: #222;
 }
 
-
-
 /* Header avec image de fond */
-#header{
+#header {
   background-image: url(images/image-en-arriere-plan-de-produits-locaux.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 400px;
-  width:100%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #fff;
   font-size: 50px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   padding-top: 0;
 }
-
 
 /* lien hover global */
 a:hover {
@@ -61,12 +58,12 @@ a:hover {
   color: #333;
   font-weight: 700;
   text-transform: none; /* on garde la casse normale */
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
 }
 
 /* Conteneur qui entoure les cartes (flex row wrap) */
 #produit-card {
-  display:flex;
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
@@ -79,19 +76,19 @@ a:hover {
    Important : remplace `id="produit1"` par `class="produit-card"` dans ton HTML
 */
 .produit-card {
-  width: 260px;                /* largeur fixe agréable pour cartes */
+  width: 260px; /* largeur fixe agréable pour cartes */
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
   padding: 12px;
   margin: 0;
-  box-shadow: 0 6px 18px rgba(20,20,30,0.06);
-  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(20, 20, 30, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   transition: transform 220ms ease, box-shadow 220ms ease;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* image de la carte */
@@ -123,10 +120,10 @@ a:hover {
 
 /* actions (boutons) */
 .produit-card .actions {
-  margin-top: auto; 
-  display:flex;
+  margin-top: auto;
+  display: flex;
   gap: 8px;
-  align-items:center;
+  align-items: center;
 }
 
 /* bouton primaire */
@@ -136,9 +133,9 @@ a:hover {
 }
 
 /* hover : léger agrandissement et ombre */
-.produit-card:hover{
+.produit-card:hover {
   transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 12px 28px rgba(20,20,30,0.12);
+  box-shadow: 0 12px 28px rgba(20, 20, 30, 0.12);
 }
 
 /* ID unique compteur*/
@@ -149,11 +146,33 @@ a:hover {
 
 /* Responsive */
 @media (max-width: 992px) {
-  .produit-card { width: 45%; } /* 2 colonnes */
-  #header { font-size: 36px; height: 320px; padding-top: 30px; }
+  .produit-card {
+    width: 45%;
+  } /* 2 colonnes */
+  #header {
+    font-size: 36px;
+    height: 320px;
+    padding-top: 30px;
+  }
 }
 @media (max-width: 576px) {
-  .produit-card { width: 100%; } /* 1 colonne */
-  .d-flex { margin-left: 0; margin-right: 0; }
-  #header { font-size: 28px; height: 220px; padding-top: 20px; }
+  .produit-card {
+    width: 100%;
+  } /* 1 colonne */
+  .d-flex {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #header {
+    font-size: 28px;
+    height: 220px;
+    padding-top: 20px;
+  }
+}
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e7e7e7;
+  margin-top: 20px;
 }
